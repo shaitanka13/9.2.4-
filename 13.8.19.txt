@@ -1,0 +1,13 @@
+quan = int(input("Какое колличество билетов хотите приобрести?: "))
+age = int(input("Сколько Вам лет?: "))
+prise = 0
+if age < 18:
+    print("Бесплатный вход")
+elif 18 <= age < 25 and quan >= 3:
+    print("Сумма к оплате: ", quan * 990 - (quan * 990)/10)
+elif 18 <= age < 25 and quan <= 3:
+    print("Сумма к оплате: ", quan * 990)
+elif  age > 25 and quan >= 3:
+    print("Сумма к оплате: ", quan * 1390 - (quan * 1390)/10)
+elif age > 25 and quan <= 3:
+    print("Сумма к оплате: ", quan * 1390)
